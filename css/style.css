@@ -6,7 +6,6 @@
 
 .container {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto; }
 
 .row::before, .row::after {
@@ -69,7 +68,7 @@ header {
   color: #fff;
   align-items: center; }
 
-#side-nav li {
+li {
   padding: 5%;
   background: #3e3f40;
   color: #fff;
@@ -78,13 +77,13 @@ header {
     background: #ebb85d;
     color: #3e3f40; }
 
-#content {
+.contenido {
   color: #3e3f40;
   padding: 2%; }
   #content h1, #content p {
     margin-bottom: 5%; }
 
-#aside {
+.lateral {
   background: #3e3f40;
   text-align: center;
   color: #fff;

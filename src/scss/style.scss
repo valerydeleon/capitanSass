@@ -15,35 +15,34 @@ header{
     align-items: center;
 }
 
-#side-nav{
-    li{
-        padding: $medium-padding;
+.navegador{
+//        padding: $medium-padding;
         background: $background-grey;
         &:hover{
             background: $background-yellow;
             color: $background-grey;
         }
         color: $text-light;
-        margin: $medium-margin;
+//        margin: $medium-margin;
     }
-}
 
-#content{
+.contenido{
+    background: $background-grey;
     color: $text-dark;
-    padding: $small-padding;
+//    padding: $small-padding;
     h1, p{
-        margin-bottom: $medium-margin;
+//        margin-bottom: $medium-margin;
     }
 }
 
-#aside{
+.lateral{
     background: $background-grey;
     text-align: center;
     color: $text-light;
-    margin: $medium-margin;
-    padding: $large-padding;
+//    margin: $medium-margin;
+//    padding: $large-padding;
     p{
-        margin-bottom: $large-margin;
+//        margin-bottom: $large-margin;
     }
 }
 
@@ -52,5 +51,46 @@ footer{
     background: $background-grey;
     text-align: center;
     color: $text-light;
-    padding: $large-padding;
+//    padding: $large-padding;
 }
+
+@media (min-width:1024px){
+    .navegador{
+        width: .col-3;
+    }
+    .contenido{
+        width: .col-6;
+    }
+    .lateral{
+        width: .col-3;
+    }
+}
+
+@media (min-width: 768px)and (max-width:1024){
+    .navegador{
+        width: .col-2;
+    }
+    .contenido{
+        width: .col-10;
+    }
+    .lateral{
+        width: .col-12;
+    }
+}
+
+@media (min-width: 320px)and (max-width:768){
+    .navegador{
+        width: .col-12;
+    }
+    .contenido{
+        width: .col-12;
+    }
+    .lateral{
+        width: .col-12;
+    }
+}
+    
+    
+    
+    
+    
