@@ -1,0 +1,56 @@
+@import 'grid';
+@import 'variable';
+
+*{
+    font-family: $general-font;
+    list-style: $list-decoration;
+}
+
+header{
+    display: flex;
+    height: 100px;
+    background: $background-yellow;
+    font: $general-font;
+    color: $text-light;
+    align-items: center;
+}
+
+#side-nav{
+    li{
+        padding: $medium-padding;
+        background: $background-grey;
+        &:hover{
+            background: $background-yellow;
+            color: $background-grey;
+        }
+        color: $text-light;
+        margin: $medium-margin;
+    }
+}
+
+#content{
+    color: $text-dark;
+    padding: $small-padding;
+    h1, p{
+        margin-bottom: $medium-margin;
+    }
+}
+
+#aside{
+    background: $background-grey;
+    text-align: center;
+    color: $text-light;
+    margin: $medium-margin;
+    padding: $large-padding;
+    p{
+        margin-bottom: $large-margin;
+    }
+}
+
+
+footer{
+    background: $background-grey;
+    text-align: center;
+    color: $text-light;
+    padding: $large-padding;
+}
