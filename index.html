@@ -1,34 +1,34 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-       <meta charset="utf-8">
+ <html lang="es">
+     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ejercicio SASS</title>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-    </head>
-    <body>
-        <header class="">
-            <h1>Capitan</h1>
-        </header>
+     </head>
+     <body>
+         <header class="">
+             <h1>Capitan</h1>
+         </header>
 
-        <div id="general-container">
-               
-            <div class="row" >
-                    <ul class="navegador">
-                        <li>Prework</li>
-                        <li>Quiz</li>
-                        <li>Presentacion</li>
-                        <li>Ejercicio</li>
-                    </ul>
+         <div id="general-container">
 
-                <div id="content" class="contenido">
-                    <h1>Ejercicio</h1>
-                    <p>Este es el contenedor principal, el objetivo es que todo se vea bien aun cambiando las resoluciones, deberas cambiar los colores y tamaños explotando las variables y funciones de SASS</p>
-                    <p>Deberas obtener la lista de asistencia usando la API ubicada en <a href="http://laboratoria.cuadra.co:9339/api/v1/students/">http://laboratoria.cuadra.co:9339/api/v1/students/</a> y agregarle estilos con SASS</p>
+             <div  class="">
+                 <ul id="side-nav">
+                     <li>Prework</li>
+                     <li>Quiz</li>
+                     <li>Presentacion</li>
+                   <li>Ejercicio</li>
+                 </ul>
+             </div>
 
-                    <h4>Asistencia: </h4>
+             <div id="content" class="">
+                 <h1>Ejercicio</h1>
+                 <p>Este es el contenedor principal, el objetivo es que todo se vea bien aun cambiando las resoluciones, deberas cambiar los colores y tamaños explotando las variables y funciones de SASS</p>
+                 <p>Deberas obtener la lista de asistencia usando la API ubicada en <a href="http://laboratoria.cuadra.co:9339/api/v1/students/">http://laboratoria.cuadra.co:9339/api/v1/students/</a> y agregarle estilos con SASS</p>
 
-                    <table class="container">
+                 <h4>Asistencia: </h4>
+                 <table class="container">
                       <thead>
                         <tr>
                           <th>Nombres</th>
@@ -39,26 +39,26 @@
                         <!-- <td>Andrea</td> -->
                       </tbody>
                     </table>
-                </div>
+             </div>
 
-                <div class="lateral">
-                    <div id="aside">
-                        <h2>Deberas</h2>
-                        <p>Crear una funcion para calcular el width % con base en que col es, ej col-1 = 8.33% , </p>
-                        <h2>Tambien</h2>
-                        <p>Implementar los colores de laboratoria usando la funcion rgb/a</p>
-                        <h2>Por ultimo</h2>
-                        <p>Implementar anidacion de maximo 4 niveles hacia abajo para facilitar la lectura del archivo</p>
-                        <h2>No olvides</h2>
-                        <p>Subir todo en version compress (--style)</p>
-                    </div>
-                </div>
+             <div class="">
+                 <div id="aside">
+                     <h2>Deberas</h2>
+                     <p>Crear una funcion para calcular el width % con base en que col es, ej col-1 = 8.33% , </p>
+                    <h2>Tambien</h2>
+                     <p>Implementar los colores de laboratoria usando la funcion rgb/a</p>
+                     <h2>Por ultimo</h2>
+                    <p>Implementar anidacion de maximo 4 niveles hacia abajo para facilitar la lectura del archivo</p>
+                    <h2>No olvides</h2>
+                     <p>Subir todo en version compress (--style)</p>
+                 </div>
+             </div>
 
-            </div>
+         </div>
 
-        <footer class="col-12">
-            <p>Cambiar el tamano de la ventana y cambiar tamaño de esto.</p>
-        </footer>
+        <footer class="">
+             <p>Cambiar el tamano de la ventana y cambiar tamaño de esto.</p>
+         </footer>
 
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>

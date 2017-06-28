@@ -10,20 +10,20 @@ header{
     display: flex;
     height: 100px;
     background: $background-yellow;
-    font: $general-font;
+    font-family: $general-font;
     color: $text-light;
     align-items: center;
 }
 
-.navegador{
-//        padding: $medium-padding;
-        background: $background-grey;
-        &:hover{
-            background: $background-yellow;
-            color: $background-grey;
-        }
-        color: $text-light;
-//        margin: $medium-margin;
+#side-nav {
+  li{
+    background: $background-grey;
+    &:hover{
+        background: $background-yellow;
+        color: $background-grey;
+    }
+    color: $text-light;
+  }
     }
 
 .contenido{
@@ -55,42 +55,37 @@ footer{
 }
 
 @media (min-width:1024px){
-    .navegador{
-        width: .col-3;
+    #side-nav{
+      width: 25%;
     }
-    .contenido{
-        width: .col-6;
+    #content{
+        width: 50%;
     }
-    .lateral{
-        width: .col-3;
-    }
-}
-
-@media (min-width: 768px)and (max-width:1024){
-    .navegador{
-        width: .col-2;
-    }
-    .contenido{
-        width: .col-10;
-    }
-    .lateral{
-        width: .col-12;
+    #aside{
+        width: 25%;
     }
 }
 
-@media (min-width: 320px)and (max-width:768){
-    .navegador{
-        width: .col-12;
+@media (min-width: 768px)and (max-width:1024px){
+    #side-nav{
+      width: 16.666%;
     }
-    .contenido{
-        width: .col-12;
+    #content{
+      width: 83.3333%;
     }
-    .lateral{
-        width: .col-12;
+    #aside{
+        width: 100%;
     }
 }
-    
-    
-    
-    
-    
+
+@media (min-width: 320px)and (max-width:768px){
+  #side-nav{
+      width: 100%;
+    }
+    #content{
+        width: 100%;
+    }
+    #aside{
+        width: 100%;
+    }
+}
